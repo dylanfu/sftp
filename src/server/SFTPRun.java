@@ -1,7 +1,11 @@
+package server;
+
+import client.SFTPClient;
+
 public class SFTPRun {
 
     public static void main(String argv[]) {
-        int port = 115;
+        int port = 160;
 
         Thread server_thread = new Thread(){
             public void run(){
@@ -22,6 +26,6 @@ public class SFTPRun {
             e.printStackTrace();
         }
 
-        System.out.println("SFTP Protocol Ended");
+        System.out.println("SFTP Connection Ended");
     }
 }

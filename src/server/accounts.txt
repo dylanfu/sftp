@@ -1,0 +1,46 @@
+{
+   "users":[
+      {
+         "user-id":1,
+         "password":"admin",
+         "accounts":[
+            {
+               "account":"admin"
+            },
+            {
+               "account":"test"
+            }
+         ]
+      },
+      {
+         "user-id":2,
+         "password":"pizza",
+         "accounts":[
+            {
+               "account":"bob"
+            }
+         ]
+      },
+      {
+         "user-id":3,
+         "accounts":[
+
+         ]
+      },
+      {
+         "user-id":4,
+         "accounts":[
+            {
+               "account":"debug"
+            }
+         ]
+      },
+      {
+         "user-id":5,
+         "password":"password",
+         "accounts":[
+
+         ]
+      }
+   ]
+}
