@@ -14,21 +14,12 @@
       },
       {
          "user-id":2,
-         "password":"pizza",
-         "accounts":[
-            {
-               "account":"bob"
-            }
-         ]
-      },
-      {
-         "user-id":3,
          "accounts":[
 
          ]
       },
       {
-         "user-id":4,
+         "user-id":3,
          "accounts":[
             {
                "account":"debug"
@@ -36,7 +27,7 @@
          ]
       },
       {
-         "user-id":5,
+         "user-id":4,
          "password":"password",
          "accounts":[
 

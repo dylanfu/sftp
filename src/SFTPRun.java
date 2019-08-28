@@ -5,7 +5,7 @@ import client.SFTPClient;
 public class SFTPRun {
 
     public static void main(String argv[]) {
-        int port = 160;
+        int port = 110;
 
         Thread server_thread = new Thread(){
             public void run(){

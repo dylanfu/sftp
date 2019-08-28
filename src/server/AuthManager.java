@@ -5,18 +5,16 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-public class Authentication {
+public class AuthManager {
     private JSONArray userData;
 
     /**
-     *
+     * AuthManager Constructor
      * @throws Exception
      */
-    public Authentication() throws Exception {
+    public AuthManager() throws Exception {
         BufferedReader fileReader = new BufferedReader(new InputStreamReader(
                 getClass().getResourceAsStream("accounts.txt")));
-
-//        System.out.println("0000000000");
 
         // Read the json file
         String text = "";
@@ -26,18 +24,14 @@ public class Authentication {
         }
         fileReader.close();
 
-//        System.out.println("1213234412");
-
         JSONObject obj = new JSONObject(text);
         userData = obj.getJSONArray("users");
-
-//        System.out.println("2324324242");
     }
 
     /**
-     *
-     * @param userID
-     * @return
+     * Validates User ID
+     * @param userID: int
+     * @return status: int
      */
     public int validateUserID(int userID) {
         for (int i = 0; i< userData.length(); i++) {
@@ -58,10 +52,10 @@ public class Authentication {
     }
 
     /**
-     *
-     * @param userID
-     * @param accountName
-     * @return
+     * Validates Accounts
+     * @param userID: int
+     * @param accountName: String
+     * @return status: int
      */
     public int validateAccount(int userID, String accountName) {
         for (int i = 0; i< userData.length(); i++) {
@@ -90,11 +84,11 @@ public class Authentication {
     }
 
     /**
-     *
-     * @param userID
-     * @param accountName
-     * @param password
-     * @return
+     * Validates passwords
+     * @param userID: int
+     * @param accountName: String
+     * @param password: String
+     * @return status: int
      */
     public int validatePassword(int userID, String accountName, String password) {
         for (int i = 0; i< userData.length(); i++) {
