@@ -1,4 +1,7 @@
 package enums;
 
-public enum fileType {
+public enum FileType {
+    ASCII,
+    BINARY,
+    CONTINUOUS
 }
