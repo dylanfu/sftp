@@ -7,6 +7,9 @@
 # BlueJ files
 *.ctxt
 
+# META-INF files
+*META-INF/
+
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
