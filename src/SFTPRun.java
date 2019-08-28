@@ -1,9 +1,13 @@
-package server;
-
 import client.SFTPClient;
+import server.SFTPServer;
 
 public class SFTPRun {
 
+    /**
+     * Run SFTP Implementation
+     * Application entry point
+     * @param argv
+     */
     public static void main(String argv[]) {
         int port = 110;
 
